@@ -9,7 +9,7 @@
     align-items: center;
     font-family: 'Inter', sans-serif;
 
-    background-image: url("../static/images/clg.png");
+    background-image: url("images/clg.png");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -58,18 +58,26 @@
     color: #472183;
 }
 
+.dept{
+  font-size: 2rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+    text-align: center;
+    color: #472183;
+}
+
 
 .card1{
-    background-image: url("../static/images/sample_img.jpeg");
+    background-image: url("images/sample_img.jpeg");
     
 }
 
 .tpo1, .tpo2, .tpo3, .tpo4{
-    background-image: url("../static/images/sample_img.jpeg");
+    background-image: url("images/sample_img.jpeg");
 }
 
 .tpr1, .tpr2, .tpr3, .tpr4{
-    background-image: url("../static/images/sample_img.jpeg");
+    background-image: url("images/sample_img.jpeg");
 }
 
 .teamgrid {
