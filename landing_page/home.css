@@ -1,0 +1,153 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: Arial, sans-serif;
+}
+
+.navbar {
+  /* background-color: rgba(0, 0, 0, 0.075);\ */
+  position: fixed !important;
+  top: 0px !important;
+  background-color: transparent;
+  color: #fff;
+  display: flex !important;
+  justify-content: space-between !important;
+  /* padding: 18px; */
+  z-index: 100;
+  width: 100%;
+  /* backdrop-filter: blur(5px); */
+}
+.navbar-scrolled{
+    background-color:#001333;
+}
+
+.container {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.logo {
+  color: #fff;
+  font-size: 24px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-decoration: none;
+}
+
+.logo img {
+  height: 3.1rem;
+}
+
+.navbar-menu {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar-menu li {
+  padding: 0 15px;
+}
+
+.navbar-menu li a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.1rem;
+  font-weight: 500;
+}
+
+.hamburger-menu {
+  display: none;
+  cursor: pointer;
+}
+
+.bar {
+  width: 25px;
+  height: 3px;
+  background-color: #fff;
+  margin: 5px;
+}
+
+/* Media Query for responsive design */
+@media screen and (max-width: 768px) {
+  .navbar-menu {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    background-color: #333;
+    width: 100%;
+  }
+
+  .navbar-menu li {
+    padding: 15px;
+    text-align: center;
+  }
+
+  .navbar-menu li a {
+    display: block;
+    color: #fff;
+    text-decoration: none;
+  }
+  .hamburger-menu {
+    display: block;
+  }
+
+  .hamburger-dropdown.show {
+    display: block;
+  }
+  .footerBox .map{
+    display: none;
+  }
+}
+/* ...existing styles... */
+
+.hamburger-dropdown {
+    display: none;
+    position: absolute;
+    left: 0;
+    background-color: #001333;
+    width: 100%;
+    z-index: 1;
+}
+.hamburger-dropdown li {
+  padding: 15px;
+  text-align: center;
+  list-style: none;
+}
+
+.hamburger-dropdown li a {
+  display: block;
+  color: #fff;
+  text-decoration: none;
+}
+
+/* ...existing styles... */
+
+.quick-links ul {
+  list-style: none;
+  padding: 0;
+}
+
+.quick-links ul li {
+  margin-bottom: 10px;
+}
+
+.quick-links ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.contact-details p {
+  margin: 0;
+}
+
+h3 {
+  font-size: 18px;
+  margin-bottom: 15px;
+}
