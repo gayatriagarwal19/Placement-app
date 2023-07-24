@@ -30,21 +30,30 @@ body{
     margin-top: 20px;
 }
 
-.wrapperDiv{
+.contentDiv{
+    text-align: center;
+    box-shadow: 1px 1px 10px 5px rgba(36, 33, 33, 0.5);
+}
+
+/* .wrapperDiv{
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-around;
     align-items: center;
     margin: 60px 100px;
 }
 .contact{
     padding: 50px;
+    margin-right: 10px;
     text-align: center;
-    width: 30%;
-    height: 50vh;
     box-shadow: 1px 1px 10px 5px rgba(36, 33, 33, 0.5);
 }
+
+.row{
+    width: 80%;
+}
+
 .location{
     width: 40%;
     height: 50vh;
     box-shadow: 1px 1px 10px 5px rgba(36, 33, 33, 0.5);
-}
+} */
