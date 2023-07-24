@@ -35,25 +35,30 @@ body{
     box-shadow: 1px 1px 10px 5px rgba(36, 33, 33, 0.5);
 }
 
-/* .wrapperDiv{
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    margin: 60px 100px;
-}
-.contact{
-    padding: 50px;
-    margin-right: 10px;
-    text-align: center;
-    box-shadow: 1px 1px 10px 5px rgba(36, 33, 33, 0.5);
-}
-
-.row{
-    width: 80%;
+@media only screen and (max-width: 768px) {
+    .container{
+        max-width: 180% !important;
+    }
+    .row{
+        font-size: 10px;
+    }
+    .contentDiv h5{
+        font-size: 15px;
+    }
 }
 
-.location{
-    width: 40%;
-    height: 50vh;
-    box-shadow: 1px 1px 10px 5px rgba(36, 33, 33, 0.5);
-} */
+@media only screen and (max-width: 576px){
+    .container{
+        width: 55% !important;
+    }
+    .contentDiv{
+        margin-bottom: 15%;
+    }
+    .location{
+        height: 50vh;
+    }
+
+    .contactHero h2{
+        font-size: 2rem;
+    }
+}
