@@ -4,10 +4,10 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Training And Placement Cell | NIT Durgapur</title>
-    <link rel="stylesheet" href="{% static 'landing_page/home.css' %}" />
-    <link rel="stylesheet" href="{% static 'landing_page/swiper.css' %}" />
-    <link rel="stylesheet" href="{% static 'landing_page/footer.css' %}" />
-    {% comment %} Bootstrap CDNs {% endcomment %}
+    <link rel="stylesheet" href="/landing_page/navbar.css" />
+    <link rel="stylesheet" href="/landing_page/swiper.css" />
+    <link rel="stylesheet" href="/landing_page/footer.css" />
+    <!-- {% comment %} Bootstrap CDNs {% endcomment %} -->
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -20,7 +20,7 @@
       crossorigin="anonymous"
     ></script>
 
-    {% comment %} Font Awesome CDNs {% endcomment %}
+    <!-- {% comment %} Font Awesome CDNs {% endcomment %} -->
     <link
       href="{% static 'fontawesomefree/css/fontawesome.css' %}"
       rel="stylesheet"
@@ -41,15 +41,13 @@
     <nav class="navbar" id="navbar">
       <div class="container">
         <div class="navbar-brand">
-          <a href="#" class="logo"
-            ><img src="{% static 'logo.png' %}" /> NIT Durgapur
-          </a>
+          <a href="#" class="logo"><img src="/logo.png" /> NIT Durgapur </a>
         </div>
         <ul class="navbar-menu">
           <li><a href="#">Home</a></li>
-          <li><a href="#">About</a></li>
-          <li><a href="{% url 'faq'%}">Faq</a></li>
-          <li><a href="{% url 'contact'%}">Contact</a></li>
+          <li><a href="teams.html">Teams</a></li>
+          <li><a href="faq.html">Faq</a></li>
+          <li><a href="contact.html">Contact</a></li>
         </ul>
         <div class="hamburger-menu" onclick="toggleMenu()">
           <div class="bar"></div>
@@ -57,9 +55,9 @@
           <div class="bar"></div>
           <ul class="hamburger-dropdown">
             <li><a href="#">Home</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Services</a></li>
-            <li><a href="#">Contact</a></li>
+            <li><a href="teams.html">Teams</a></li>
+            <li><a href="faq.html">Faq</a></li>
+            <li><a href="contact.html">Contact</a></li>
           </ul>
         </div>
       </div>
@@ -76,155 +74,11 @@
       autoplay-disable-on-interaction="false"
       effect="fade"
     >
-      <swiper-slide
-        ><img src="{% static 'swiper_imgs/slide1.jpg' %}" />
-      </swiper-slide>
-      <swiper-slide
-        ><img src="{% static 'swiper_imgs/slide2.png' %}"
-      /></swiper-slide>
-      <swiper-slide
-        ><img src="{% static 'swiper_imgs/slide3.jpg' %}"
-      /></swiper-slide>
+
+      <swiper-slide><img src="/swiper_imgs/Slide2.png " /></swiper-slide>
+      <swiper-slide><img src="/swiper_imgs/slide1.jpg" /></swiper-slide>
+      <swiper-slide><img src="/swiper_imgs/slide3.jpg" /> </swiper-slide>
     </swiper-container>
-
-    {% comment %}
-    <footer class="footer">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-3 col-md-3 col-xs-12">
-            <div class="widget clearfix">
-              <div class="widget-title">
-                <h3>QUICK LINKS</h3>
-              </div>
-              <div style="color: #cccc">
-                <a
-                  href="https://nitdelhi.ac.in/"
-                  style="color: #cccc; text-decoration: none"
-                  >NIT DELHI HOME PAGE</a
-                >
-              </div>
-              <!-- <p>  As a fully  -->
-              <!-- funded governmental body, NIT Delhi was established as an institute of ‘National Importance’ during the 11th Five Year Plan under the Ministry of Human Resource Development. For the initial two years, academic activities were conducted at NIT Warangal, the mentor Institute for NIT Delhi. </p>    -->
-
-              <div class="footer-right">
-                <ul class="footer-links-soi">
-                  <li>
-                    <a href="https://www.facebook.com/nitdelhiofficialpage/"
-                      ><i class="fa fa-facebook"></i
-                    ></a>
-                  </li>
-                  <!-- linkedin	 -->
-                  <li>
-                    <a
-                      href="https://in.linkedin.com/in/nit-delhi-placement-cell-4a70a9122"
-                      ><i class="fa fa-linkedin"></i
-                    ></a>
-                  </li>
-                  <li>
-                    <a href="https://twitter.com/NITDofficial?s=20"
-                      ><i class="fa fa-twitter"></i
-                    ></a>
-                  </li>
-                  <!-- insta	 -->
-                  <li>
-                    <a href="https://www.instagram.com/nitdelhiofficial/"
-                      ><i class="fa fa-instagram"></i
-                    ></a>
-                  </li>
-                </ul>
-                <!-- end links -->
-              </div>
-            </div>
-            <!-- end clearfix -->
-          </div>
-          <!-- end col -->
-          <div class="col-lg-3 col-md-3 col-xs-12">
-            <div class="widget clearfix">
-              <div class="widget-title">
-                <h3>Information Link</h3>
-              </div>
-              <ul class="footer-links">
-                <li id="hm"><a href="index.html">HOME</a></li>
-                <li id="ab">
-                  <a href="whyrecruit.html">WHY RECRUITE @ NITD</a>
-                </li>
-                <li id="st"><a href="recruiters.html">FOR RECRUITERS</a></li>
-                <li id="blg"><a href="team.html">TEAM</a></li>
-                <li id="ct"><a href="contact.html">CONTACT</a></li>
-              </ul>
-              <!-- end links -->
-            </div>
-            <!-- end clearfix -->
-          </div>
-          <!-- end col -->
-
-          <div class="col-lg-3 col-md-3 col-xs-12">
-            <div class="widget clearfix">
-              <div class="widget-title">
-                <h3>Contact Details</h3>
-              </div>
-
-              <ul class="footer-links">
-                <li>
-                  <a href="mailto:tnp@nitdelhi.ac.in">tnp@nitdelhi.ac.in</a>
-                </li>
-                <li>
-                  <a href="https://tnp.nitdelhi.ac.in" target="_blank"
-                    >tnp.nitdelhi.ac.in</a
-                  >
-                </li>
-                <li>
-                  <strong>Address:</strong>
-                  <a href="https://goo.gl/maps/LBrEts1UCFJGXd8K6"
-                    ><br />National Institute of Technology
-
-                    <br />
-                    Plot No. FA7,Zone P1,<br />
-                    Chandra Hospital<br />GT Karnal Road, Delhi-110036</a
-                  >
-                </li>
-              </ul>
-              <!-- end links -->
-            </div>
-            <!-- end clearfix -->
-          </div>
-          <!-- end col -->
-          <div class="col-lg-3 col-md-3 col-xs-12">
-            <div class="widget clearfix">
-              <div class="widget-title">
-                <h3>Head T&amp;P Cell</h3>
-              </div>
-
-              <ul class="footer-links">
-                <li>
-                  <h4
-                    style="
-                      color: white;
-                      font-weight: 500;
-                      margin-bottom: -3.5px;
-                    "
-                  >
-                    Dr. Kapil Sharma
-                  </h4>
-                </li>
-                <li>
-                  <a href="mailto:headtnp@nitdelhi.ac.in"
-                    >tnp@nitdelhi.ac.in
-                  </a>
-                </li>
-                <li><a>Phone: 011-33861065, 183</a></li>
-              </ul>
-              <!-- end links -->
-            </div>
-            <!-- end clearfix -->
-          </div>
-          <!-- end col -->
-        </div>
-        <!-- end row -->
-      </div>
-      <!-- end container -->
-    </footer>
-    {% endcomment %}
 
     <footer class="newfooter">
       <div class="footerBox footer-center">
@@ -323,15 +177,15 @@
                     <h3>Information Links</h3>
                   </div>
                   <ul class="footer-links">
-                    <li id="hm"><a href="{% url 'home' %}">HOME</a></li>
+                    <li id="hm"><a href="index.html">HOME</a></li>
                     <li id="ab">
                       <a href="#">ABOUT</a>
                     </li>
-                    <li id="st"><a href="{% url 'faq' %}">FAQ</a></li>
-                    {% comment %}
-                    <li id="blg"><a href="team.html">TEAM</a></li>
-                    {% endcomment %}
-                    <li id="ct"><a href="{% url 'contact' %}">CONTACT</a></li>
+                    <li id="st"><a href="faq.html">FAQ</a></li>
+                    
+                    <li id="blg"><a href="teams.html">TEAM</a></li>
+                    
+                    <li id="ct"><a href="contact.html">CONTACT</a></li>
                   </ul>
                   <!-- end links -->
                 </div>
@@ -339,40 +193,8 @@
               </div>
               <!-- end col -->
 
-              {% comment %}
-              <div class="col-lg-4 col-md-3 col-xs-12">
-                <div class="widget clearfix">
-                  <div class="widget-title">
-                    <h3>Contact Details</h3>
-                  </div>
-
-                  <ul class="footer-links">
-                    <li>
-                      <a href="mailto:placementcell@admin.nitdgp.ac.in"
-                        >placementcell@admin.nitdgp.ac.in</a
-                      >
-                    </li>
-                    <li>
-                      <a href="https://nitdgp.ac.in/" target="_blank"
-                        >nitdgp.ac.in</a
-                      >
-                    </li>
-                    <li>
-                      <strong>Address:</strong>
-                      <a href="https://goo.gl/maps/yATsHJ3Cg8f6rqBk6"
-                        ><br />National Institute of Technology Durgapur
-
-                        <br />
-                        A-Zone,<br />
-                        Mahatma Gandhi Rd,<br />Durgapur, West Bengal 713209</a
-                      >
-                    </li>
-                  </ul>
-                  <!-- end links -->
-                </div>
-                <!-- end clearfix -->
-              </div>
-              {% endcomment %}
+        
+             
               <!-- end col -->
               <div class="col-lg-4 col-md-3 col-xs-12">
                 <div class="widget clearfix">
@@ -423,45 +245,45 @@
           </div>
         </div>
         <div class="logos">
-          <img src="{% static 'footer_imgs/aria.jpg' %}" class="footer-logos" />
+          <img src="/footer_imgs/aria.jpg" class="footer-logos" />
           <img
-            src="{% static 'footer_imgs/indiagov.png' %}"
+            src="/footer_imgs/indiagov.png"
             class="footer-logos"
           />
           <img
-            src="{% static 'footer_imgs/mygov.png' %}"
+            src="/footer_imgs/mygov.png"
             class="footer-logos"
           />
           <img
-            src="{% static 'footer_imgs/dialgov.png' %}"
+            src="/footer_imgs/dialgov.png"
             class="footer-logos"
           />
           <img
-            src="{% static 'footer_imgs/digitalindia.png' %}"
+            src="/footer_imgs/digitalindia.png"
             class="footer-logos"
           />
           <img
-            src="{% static 'footer_imgs/myvisit.png' %}"
+            src="/footer_imgs/myvisit.png"
             class="footer-logos"
           />
           <img
-            src="{% static 'footer_imgs/onlinevoters.png' %}"
+            src="/footer_imgs/onlinevoters.png"
             class="footer-logos"
           />
           <img
-            src="{% static 'footer_imgs/datagov.png' %}"
+            src="/footer_imgs/datagov.png"
             class="footer-logos"
           />
           <img
-            src="{% static 'footer_imgs/righttoedu.png' %}"
+            src="/footer_imgs/righttoedu.png"
             class="footer-logos"
           />
           <img
-            src="{% static 'footer_imgs/electronicsindia.png' %}"
+            src="/footer_imgs/electronicsindia.png"
             class="footer-logos"
           />
           <img
-            src="{% static 'footer_imgs/swacchbharat.png' %}"
+            src="/footer_imgs/swacchbharat.png"
             class="footer-logos"
           />
         </div>
@@ -471,7 +293,7 @@
       </div>
     </footer>
 
-    <script src="{% static 'landing_page/home.js' %}"></script>
+    <script src="/landing_page/home.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-element-bundle.min.js"></script>
   </body>
 </html>
