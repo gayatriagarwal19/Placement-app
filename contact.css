@@ -62,3 +62,20 @@ body {
     font-size: 2rem;
   }
 }
+
+@media only screen and (max-width: 400px) {
+    .content .container {
+      width: 75% !important;
+      margin-left: 15%;
+    }
+    .contentDiv {
+      margin-bottom: 15%;
+    }
+    .location {
+      height: 50vh;
+    }
+  
+    .contactHero h2 {
+      font-size: 1.7rem;
+    }
+  }

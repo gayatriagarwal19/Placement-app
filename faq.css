@@ -135,7 +135,7 @@ body {
   position: absolute;
   right: 10px;
   top: 15px;
-  background-image: url("../../assets/plus.svg");
+  background-image: url("../../assets/plus.svg");   /* could not find this svg */
   width: 30px;
   height: 30px;
   display: block;
