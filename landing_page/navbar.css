@@ -24,7 +24,7 @@ body {
     background-color:#001333;
 }
 
-.container {
+.navbar .container {
   width: 100%;
   display: flex;
   justify-content: space-between;

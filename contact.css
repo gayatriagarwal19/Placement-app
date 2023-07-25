@@ -1,65 +1,81 @@
-body{
-    margin: 0;
+body {
+  margin: 0;
 }
 
-.contactHero{
-    height: 70vh;
+.contactHero {
+  height: 70vh;
 }
 
-.contactImg{
-    position: absolute;
-    width: 100%;
-    height: 70vh;
-    opacity: .7;
+.contactImg {
+  position: absolute;
+  width: 100%;
+  height: 70vh;
+  opacity: 0.7;
 }
 
-.contactHero h2{
-    position: absolute;
-    top: 30%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    z-index: 2 !important;
-    color: white;
-    font-size: 45px;
-    text-shadow: 5px 5.5px 15px #050000;
+.contactHero h2 {
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2 !important;
+  color: white;
+  font-size: 45px;
+  text-shadow: 5px 5.5px 15px #050000;
 }
 
-.contentHeading{
-    text-align: center;
-    color: rgb(73, 73, 201);
-    margin-top: 20px;
+.contentHeading {
+  text-align: center;
+  color: rgb(73, 73, 201);
+  margin-top: 20px;
 }
 
-.contentDiv{
-    text-align: center;
-    box-shadow: 1px 1px 10px 5px rgba(36, 33, 33, 0.5);
+.contentDiv {
+  text-align: center;
+  box-shadow: 1px 1px 10px 5px rgba(36, 33, 33, 0.5);
 }
 
 @media only screen and (max-width: 768px) {
-    .container-content{
-        max-width: 180% !important;
-    }
-    .row{
-        font-size: 10px;
-    }
-    .contentDiv h5{
-        font-size: 15px;
-    }
+  .content .container {
+    max-width: 180% !important;
+  }
+  .row {
+    font-size: 10px;
+  }
+  .contentDiv h5 {
+    font-size: 15px;
+  }
 }
 
-@media only screen and (max-width: 576px){
-    .container-content{
-        width: 55% !important;
-        margin-left: 20%;
-    }
-    .contentDiv{
-        margin-bottom: 15%;
-    }
-    .location{
-        height: 50vh;
-    }
+@media only screen and (max-width: 576px) {
+  .content .container {
+    width: 55% !important;
+  }
+  .contentDiv {
+    margin-bottom: 15%;
+  }
+  .location {
+    height: 50vh;
+  }
 
-    .contactHero h2{
-        font-size: 1.7rem;
-    }
+  .contactHero h2 {
+    font-size: 2rem;
+  }
 }
+
+@media only screen and (max-width: 400px) {
+    .content .container {
+      width: 75% !important;
+      margin-left: 15%;
+    }
+    .contentDiv {
+      margin-bottom: 15%;
+    }
+    .location {
+      height: 50vh;
+    }
+  
+    .contactHero h2 {
+      font-size: 1.7rem;
+    }
+  }
